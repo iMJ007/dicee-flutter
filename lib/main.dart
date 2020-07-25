@@ -51,6 +51,8 @@ class _DicePageState extends State<DicePage> {
     );
   }
 
+  /// This method updates the dice numbers for both dices and updates them
+  /// randomly and update the state of widget after that. :)
   void updateDiceNumbers() {
     setState(() {
       leftDiceNumber = Random().nextInt(6) + 1;
